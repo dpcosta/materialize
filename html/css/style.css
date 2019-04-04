@@ -63,3 +63,15 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+#meu-perfil>i {
+  display: inline-block;
+}
+
+.carousel, .carousel-item {
+  height: 400px !important;
+}
+
+.carousel-fixed-item {
+  background: rgba(0,0,0,.5);
+}

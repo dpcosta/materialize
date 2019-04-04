@@ -3,14 +3,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Leilões online</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
+<body class="grey lighten-4">
     <div class="navbar-fixed">
         <nav class="white z-depth-2" role="navigation">
             <div class="nav-wrapper">
@@ -21,7 +21,7 @@
         
                 <!-- Dropdown Structure -->
                 <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#!">Perfil</a></li>
+                    <li><a href="#!">Meu Perfil</a></li>
                     <li><a href="#!">Opções</a></li>
                     <li class="divider"></li>
                     <li><a href="#!">Logout</a></li>
@@ -29,11 +29,13 @@
 
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Leilões</a></li>
+                    <li><a href="#">Minhas Ofertas</a></li>
+                    <li><a href="#">Login</a></li>
                     <li><a href="#">Usuários</a></li>
                     <li class="center-align">
-                        <a class="dropdown-trigger" href="#" data-target="dropdown1">
-                            <!-- <i class="material-icons blue-text">account_circle</i> -->
-                            Perfil<i class="material-icons right">arrow_drop_down</i>
+                        <a id="meu-perfil" class="dropdown-trigger" href="#" data-target="dropdown1">
+                            <i class="material-icons large">account_circle</i>
+                            <i class="material-icons">arrow_drop_down</i>
                         </a>
                     </li>
                 </ul>
@@ -48,129 +50,156 @@
             </nav>
     </div>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="no-pad-bot">
-        <div class="carousel carousel-slider center">
-            <div class="carousel-fixed-item center">
-                <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            </div>
-            <div class="carousel-item red white-text" href="#one!">
-                <h2>First Panel</h2>
-                <p class="white-text">This is your first panel</p>
-            </div>
-            <div class="carousel-item amber white-text" href="#two!">
-                <h2>Second Panel</h2>
-                <p class="white-text">This is your second panel</p>
-            </div>
-            <div class="carousel-item green white-text" href="#three!">
-                <h2>Third Panel</h2>
-                <p class="white-text">This is your third panel</p>
-            </div>
-            <div class="carousel-item blue white-text" href="#four!">
-                <h2>Fourth Panel</h2>
-                <p class="white-text">This is your fourth panel</p>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+
+                <div class="col s12">
+                    <h4>Próximos Leilões</h4>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/painting1.jpg" width="300px">
+                            <span class="card-title">Réplica de Pintura</span>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae odio amet nisi facere tempore.
+                            </p>
+                        </div>
+                        <div class="card-action center">
+                            <a class="btn" href="#">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/carro1.jpg" width="300px">
+                            <span class="card-title">Buick Antigo</span>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae odio amet nisi facere tempore.
+                            </p>
+                        </div>
+                        <div class="card-action center">
+                            <a class="btn" href="#">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/instrumento1.jpg" width="300px">
+                                <span class="card-title">Guitarra Special</span>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae odio amet nisi facere tempore.
+                                </p>
+                            </div>
+                            <div class="card-action center">
+                                <a class="btn" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="images/instrumento2.jpg" width="300px">
+                                    <span class="card-title">Piano Clássico</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae odio amet nisi facere tempore.
+                                    </p>
+                                </div>
+                                <div class="card-action center">
+                                    <a class="btn" href="#">Fazer Oferta</a>
+                                </div>
+                            </div>
+                        </div>
+                                        
+
             </div>
         </div>
     </div>
-  </div>
 
+    <div class="parallax-container valign-wrapper">
+        <div class="parallax">
+            <img src="https://picsum.photos/2000/800?image=78">
+        </div>
+    </div>
 
+    
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12">
+                <h4 class="center">Navegue pelas categorias de Leilão</h4>
+            </div>
+        </div>
+
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+            <div class="icon-block center">
+                <h2 class="brown-text"><i class="material-icons">directions_car</i></h2>
+                <h5>Carros e Caminhões</h5>
+                <p class="light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laborum incidunt voluptatum accusantium repellendus numquam.
+                </p>
+                <a class="btn" href="leiloes/automoveis">Descobrir</a>
+            </div>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
+            <div class="icon-block center">
+                <h2 class="brown-text"><i class="material-icons">palette</i></h2>
+                <h5>Pinturas e Esculturas</h5>
+                <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laborum incidunt voluptatum accusantium repellendus numquam.</p>
+                <a class="btn" href="leiloes/pinturas">Descobrir</a>
+            </div>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <div class="icon-block center">
+                <h2 class="brown-text"><i class="material-icons">grade</i></h2>
+                <h5>Itens de Colecionador</h5>
+                <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laborum incidunt voluptatum accusantium repellendus numquam.</p>
+                <a class="btn" href="leiloes/colecionador">Descobrir</a>
           </div>
         </div>
       </div>
 
     </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="https://picsum.photos/2000/400?image=78" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="https://picsum.photos/2000/400?image=88" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+          <h5 class="white-text">Sobre o sistema</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros.</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Pré-Requisitos</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">AspNet Core MVC</a></li>
+            <li><a class="white-text" href="#!">Entity Framework Core</a></li>
+            <li><a class="white-text" href="#!">Identity</a></li>
+            <li><a class="white-text" href="#!">Testes com xUnit</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5 class="white-text">Referências</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Projeto no Github</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
@@ -180,7 +209,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="brown-text text-lighten-3" href="http://github.com/dpcosta">Daniel Portugal</a>
       </div>
     </div>
   </footer>
